@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calmind AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Calmind AI</h1>
+        <div id="chat-box" class="chat-box">
+            <div class="message bot-message">
+                Welcome. I'm Calmind, your supportive AI assistant. How can I help you feel better today?
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your thoughts here...">
+            <button id="send-button">Send</button>
+        </div>
+        <p class="status-text" id="status-text">Ready to listen.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
